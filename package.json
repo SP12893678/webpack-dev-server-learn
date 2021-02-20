@@ -22,7 +22,8 @@
     "postcss-loader": "^4.2.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^2.0.0",
-    "tailwindcss": "^1.9.6",
+    "stylelint": "^13.11.0",
+    "stylelint-config-standard": "^20.0.0",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.46.0",
@@ -31,6 +32,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "tailwindcss": "^1.9.6"
   }
 }

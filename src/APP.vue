@@ -1,5 +1,8 @@
 <template>
-  <h1 class="text-red-500">Hello Vue</h1>
+  <div >
+    <h1 class="text-red-500">Hello Vue</h1>
+    <h1 class="red-title">Hello Vue</h1>
+  </div>
 </template>
 
 <script>
@@ -9,10 +12,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$h1_bgcolor: #995599;
 
-h1{
-    background-color: $h1_bgcolor;
+.red-title {
+  @apply text-red-600 text-6xl;
 }
-
 </style>
