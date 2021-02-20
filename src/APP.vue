@@ -1,5 +1,5 @@
 <template>
-  <h1>Hello Vue</h1>
+  <h1 class="text-red-500">Hello Vue</h1>
 </template>
 
 <script>
@@ -14,4 +14,5 @@ $h1_bgcolor: #995599;
 h1{
     background-color: $h1_bgcolor;
 }
+
 </style>
