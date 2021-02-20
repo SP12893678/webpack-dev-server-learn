@@ -1,5 +1,6 @@
 const path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+var VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: "./src/index.js",
@@ -29,12 +30,17 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
     ]
   },
   plugins:[
+    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
         filename: 'index.html',
         template: './src/index.html'
-    })
+    }),
 ]
 };
