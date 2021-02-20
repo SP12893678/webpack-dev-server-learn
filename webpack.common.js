@@ -6,6 +6,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
@@ -22,7 +34,7 @@ module.exports = {
   plugins:[
     new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: 'src/index.html'
+        template: './src/index.html'
     })
 ]
 };
